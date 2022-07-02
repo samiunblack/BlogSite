@@ -37,7 +37,7 @@ function Index ({posts}) {
       <div className="layout-wrapper">
         <HeadMetadata
           title="Samiun's Blog"
-          metaDescription="Samiun Black is a software developer and high school student who writes about tech, productivity and study tips"
+          metaDescription="Samiun's blog about tech, productivity and study tips"
         />
         <div className="homepage-container">
           <div className="homepage-introduction">

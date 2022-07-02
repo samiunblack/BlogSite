@@ -51,7 +51,7 @@ export default class extends Component {
                   {
                     this.props.post.tags.map((tag, index) => {
                       return (
-                        <a className="blog-post-top-tag-btn" key={index}  href={`/blog/tags/${tag}`}>
+                        <a className="blog-post-top-tag-btn" key={index} href={`/blog/tags/${tag}`}>
                              <span>#{tag}</span>
                         </a>
                       )

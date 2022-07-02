@@ -42,7 +42,10 @@
 
 .blog-post-cover-image-container {
   display: grid;
+  margin-top: 30px;
   justify-items: center;
+  width: 100%;
+  height: 450px;
 }
 
 .blog-post-cover-image-caption {
@@ -156,6 +159,16 @@
 
 .blog-post-body-code-snippet pre {
   margin: 0;
+}
+
+.blog-post-body-content pre {
+  margin-bottom: 20px;
+}
+
+.blog-post-body-content hr {
+  border: 0.5px solid #CCC;
+  width: 80px;
+  margin: 40px auto;
 }
 
 .blog-post-body-content img {

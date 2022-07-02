@@ -30,7 +30,7 @@ mongoose.connection.on("open", function() {
 
 app.use(helmet())
 app.use(cors({
-  origin: process.env.NODE_ENV === "development" ? config.devAdminURL : /admin.example.com$/,
+  origin: process.env.NODE_ENV === "development" ? config.devAdminURL : config.prodAdminURL,
   credentials: true
 }))
 app.use(bodyParser.json({limit: "50mb"}))
