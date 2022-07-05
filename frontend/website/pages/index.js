@@ -37,7 +37,9 @@ function Index ({posts}) {
       <div className="layout-wrapper">
         <HeadMetadata
           title="Samiun's Blog"
-          metaDescription="Samiun's blog about tech, productivity and study tips"
+          metaDescription="Samiun's blog about tech, productivity and learning tips"
+          imageURL="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+
         />
         <div className="homepage-container">
           <div className="homepage-introduction">
@@ -50,7 +52,7 @@ function Index ({posts}) {
             </p>
             <br></br>
             <p>If you have any questions or just want to say hi,
-              you can contact me by my email at <a href="malito: samiunblack@gmail.com" style={{ color: 'inherit' }}>samiunblack@gmail.com</a>
+              you can contact me by my email at <a href="mailto: samiunblack@gmail.com" style={{ color: 'inherit' }}>samiunblack@gmail.com</a>
             </p>
           </div>
           <div className="homepage-latest-blog-posts">

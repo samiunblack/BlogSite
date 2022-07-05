@@ -8,7 +8,7 @@ export default class extends Component {
         <div className="footer-links">
           <a href="/">Home</a>
           <a href="/blog">Writing</a>
-          <a href="malito: samiunblack@gmail.com">Contact</a>
+          <a href="mailto: samiunblack@gmail.com">Contact</a>
         </div>
       </footer>
     )

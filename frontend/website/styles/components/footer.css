@@ -20,9 +20,12 @@
 
 
 @media only screen and (max-width: 900px) and (min-width: 0px) {
-  .footer-links a {
+  .footer-wrapper {
     display: block;
-    margin: 20px 0px 0px 0px;
-  }
+    text-align: center;
+  } 
 
+  .footer-links {
+    padding-top: 10px;
+  }
 }

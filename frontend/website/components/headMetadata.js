@@ -13,7 +13,9 @@ export default class extends Component {
         <meta name="theme-color" content="#ffffff" />
         <title>{this.props.title}</title>
         <meta name="description" content={this.props.metaDescription} />
-        
+        <meta property="og:title" content={this.props.title} />
+        <meta property="og:image" content={this.props.imageURL} />
+        <meta property="og:description" content={this.props.metaDescription} />
       </Head>
     )
   }

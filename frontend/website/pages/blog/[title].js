@@ -37,6 +37,7 @@ export default class extends Component {
         <HeadMetadata
           title={this.props.post ? this.props.post.seoTitleTag : "Blog Post | Samiun's Blog"}
           metaDescription={this.props.post && this.props.post.seoMetaDescription}
+          imageURL={this.props.thumbnailImageUrl && this.props.post.thumbnailImageUrl}
         />
         <div className="blog-post-container">
           { this.props.post && !this.props.getDataError && !this.props.notFoundError ? <div>
