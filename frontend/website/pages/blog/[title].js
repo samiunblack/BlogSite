@@ -3,7 +3,7 @@ import hljs from "highlight.js"
 import moment from "moment"
 import {GoPrimitiveDot} from "react-icons/go"
 
-import "../../node_modules/highlight.js/styles/atom-one-dark.css"
+import "../../node_modules/highlight.js/styles/tokyo-night-dark.css"
 
 import Footer from "../../components/footer.js"
 import Header from "../../components/header.js"
@@ -47,7 +47,7 @@ export default class extends Component {
               <div className="blog-post-top-meta">
                 <div className="blog-post-time">
                   SB {moment.unix(this.props.post.dateTimestamp).format("YYYY-MM-DD")} 
-                  <GoPrimitiveDot></GoPrimitiveDot> {readingTime} minute</div>
+                  <GoPrimitiveDot></GoPrimitiveDot> {readingTime} minutes read</div>
                 <div className="blog-post-tags">
                   {
                     this.props.post.tags.map((tag, index) => {

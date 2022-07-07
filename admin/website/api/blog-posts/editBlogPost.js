@@ -2,7 +2,7 @@ import axios from "axios"
 
 import apiBaseUrl from "../../utils/apiBaseUrl.js"
 
-export default function(id, title, urlTitle, dateTimestamp, tags, thumbnailImageUrl, thumbnailImageCaptioni, markdownContent, seoTitleTag, seoMetaDescription, callback) {
+export default function(id, title, urlTitle, dateTimestamp, tags, thumbnailImageUrl, thumbnailImageCaption, markdownContent, seoTitleTag, seoMetaDescription, callback) {
   axios.put(`${apiBaseUrl}/blog-posts/edit`, {
     id: id,
     title: title,
@@ -10,7 +10,7 @@ export default function(id, title, urlTitle, dateTimestamp, tags, thumbnailImage
     dateTimestamp: dateTimestamp,
     tags: tags,
     thumbnailImageUrl: thumbnailImageUrl,
-    thumbnailImageCaptioni: thumbnailImageCaptioni,
+    thumbnailImageCaption: thumbnailImageCaption,
     markdownContent: markdownContent,
     seoTitleTag: seoTitleTag,
     seoMetaDescription: seoMetaDescription
