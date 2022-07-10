@@ -16,6 +16,7 @@ export default class extends Component {
         <meta property="og:title" content={this.props.title} />
         <meta property="og:image" content={this.props.imageURL} />
         <meta property="og:description" content={this.props.metaDescription} />
+        <meta name="google-site-verification" content={process.env.GOOGLE_VERIFICATION_ID} />
       </Head>
     )
   }
