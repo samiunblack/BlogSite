@@ -7,6 +7,7 @@ import axios from "axios";
 import getAllBlogPosts from "../../api/getAllBlogPosts.js";
 import apiBaseUrl from "../../utils/apiBaseUrl.js";
 import moment from "moment";
+import GoogleAnalytics from "../../components/googleAnalytics.js";
 
 function Index({posts}) {
     const [query, setQuery] = useState("");
@@ -38,6 +39,7 @@ function Index({posts}) {
           metaDescription="List of all blog posts published on the Samiun Black blog."
           imageURL="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         />
+        <GoogleAnalytics />
         <div className="blog-posts-container">
           <Header />
           <h1>writings</h1>

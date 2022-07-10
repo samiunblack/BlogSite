@@ -6,6 +6,7 @@ import Footer from "../../../components/footer.js"
 import HeadMetadata from "../../../components/headMetadata.js"
 
 import getBlogPostsByTag from "../../../api/getBlogPostsByTag.js"
+import GoogleAnalytics from "../../../components/googleAnalytics"
 
 export default class extends Component {
   static async getInitialProps ({ query }) {
@@ -24,7 +25,7 @@ export default class extends Component {
           title={`Blog posts tagged as "${this.props.tag}" | Coding Blog`}
           metaDescription={`All blog posts tagged as "${this.props.tag}".`}
         />
-        
+        <GoogleAnalytics />
         <div className="blog-posts-container">
           <Header />
           <h1 style={{marginBottom: '10px'}}>Blog posts tagged as <u>{this.props.tag}</u></h1>

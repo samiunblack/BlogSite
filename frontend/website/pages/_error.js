@@ -1,4 +1,5 @@
 import { Component } from "react"
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 import HeadMetadata from "../components/headMetadata.js"
 
@@ -17,6 +18,7 @@ export default class extends Component {
         <HeadMetadata
           title="Error | Samiun's Blog"
         />
+        <GoogleAnalytics />
         <div className="error-container">
           {
             this.props.statusCode === 404 ?

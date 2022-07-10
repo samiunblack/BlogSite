@@ -10,6 +10,7 @@ import Header from "../../components/header.js"
 import HeadMetadata from "../../components/headMetadata.js"
 
 import getBlogPostByUrlTitle from "../../api/getBlogPostByUrlTitle.js"
+import GoogleAnalytics from "../../components/googleAnalytics"
 
 
 export default class extends Component {
@@ -39,6 +40,7 @@ export default class extends Component {
           metaDescription={this.props.post && this.props.post.seoMetaDescription}
           imageURL={this.props.thumbnailImageUrl && this.props.post.thumbnailImageUrl}
         />
+        <GoogleAnalytics />
         <div className="blog-post-container">
           { this.props.post && !this.props.getDataError && !this.props.notFoundError ? <div>
             <Header /> 
